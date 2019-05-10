@@ -1,0 +1,15 @@
+# $Id$
+# Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
+
+pkgname=plasma5-desktoptheme-breeze-alphablack
+pkgver=15.0
+pkgrel=1
+pkgdesc="Breeze Light theme with minor improvements and a black panel/titlebar"
+arch=('any')
+url='https://github.com/blackbird-os/plasma5-desktoptheme-breeze-alphablack'
+license=('GPL')
+
+package() {
+  cd ../..
+  cp -aR usr $pkgdir/
+}
